@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomepageController!{% endblock %}
+
+{% block body %}
+    <style>
+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    </style>
+
+    <div class="example-wrapper">
+        <h1>Hello enter a sentence! ✅</h1>
+    </div>
+
+    <div class="example-wrapper">
+        <form method="post">
+            <label for="sentence">Please fill in your name:  </label><br>
+            <input type="text" name="sentence" id="sentence" value=""><br>
+            <input type="submit" value="transform" name="transform">
+        </form>
+    </div>
+
+    <div>
+        <p>Here is your capitalized sentence: {{ capitalized_sentence }}</p>
+        <p>Here is your dashed sentence: {{ dashed_sentence }}</p>
+    </div>
+{% endblock %}
